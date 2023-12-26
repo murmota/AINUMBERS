@@ -57,7 +57,7 @@ while os.path.isfile(f"digits/digit{image_number}.png"):
                 y_train = y_train_updated
 
             # Переобучение модели
-            model.fit(x_train, y_train, epochs=2)
+            model.fit(x_train, y_train, epochs=15)
 
             # Сохранение обновленной модели
             model.save('handwritten.model')
